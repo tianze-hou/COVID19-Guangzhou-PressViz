@@ -1,13 +1,11 @@
-# 数据及代码
-
-## 内容及工作流程说明
+# 内容及工作流程说明
 本项目为数据可视化作业《三年鏖战，广州疫情新闻发布会跨越终点》的源代码展示。考虑到matplotlib默认配置下对中文支持不佳，以及后期编辑排版中的效率，代码生成的多数图像不包括文字标签，也没有从美观角度考虑进行比较复杂的配置。后期编辑排版使用Adobe Illustrator完成。  
 
 部分数据使用pandas进行了预处理。考虑到csv格式预处理流程方法较多，代码比较简单，此处不再一一展示。  
 
 对于词频统计部分，考虑到StanfordNLP对新词的分词准确率不佳，最终使用了微词云进行分词统计。
 
-## 依赖
+# 依赖
 ```text
 Pillow>=8.1.1
 Scrapy>=2.7.1
@@ -26,26 +24,26 @@ pyecharts>=2.0.1
 $ pip install -r requirements.txt
 ```
 
-## 数据及代码目录
+# 数据及代码目录
 
-### 00_raw_data
+## 00_raw_data
 包含本项目使用的原始数据，包含两个文件：
 1. source_text.csv：爬虫结合人工整理的发布会数据。
 2. source_wb.csv：爬虫获取的#广州疫情#微博话题内容数据。
 3. source_encoding1.csv, source_encoding2.csv：由王睿同学、杨笑薇同学人工编码完成的媒体编码表。
 
-### 01_Type_tree
+## 01_Type_tree
 即“广州疫情新闻发布会构成”图表的源代码，由侯天泽同学编写并完成后期编辑。 源数据由王睿、杨笑薇同学人工编码完成。   
 使用sqyarify库生成矩形树图并绘制为output.svg，后期使用Adobe Illustrator进行编辑和排版。
 output.svg为程序运行导出的结果。后期使用Adobe Illustrator进行编辑和排版。
 
-### 02_Source_chart
+## 02_Source_chart
 即“广州疫情新闻发布会正文公开来源”图表的源代码，由侯天泽同学编写并完成后期编辑。  
 事先使用pandas将原始数据source_text.csv处理为input.csv，作为用于本表的数据。  
 使用pandas读取input.csv数据，使用matplotlib的ax.broken_barh函数绘制矩形色块。  
 output.svg为程序运行导出的结果。后期使用Adobe Illustrator进行编辑和排版。
 
-### 03_Frequency_histograph
+## 03_Frequency_histograph
 即“广州疫情新闻发布会召开频率”图表的源代码，由侯天泽同学编写并完成后期编辑。  
 事先使用pandas将原始数据source_text.csv处理为input.csv，作为用于本表的数据。  
 使用pandas将数据分组，使用matplotlib的subplots函数创建子图，使用figure和axes对象设置子图布局和样式，使用matplotlib的bar函数在每个子图上绘制柱状图。  
