@@ -8,16 +8,19 @@
 对于词频统计部分，考虑到StanfordNLP对新词的分词准确率不佳，最终使用了微词云进行分词统计。
 
 ## 依赖
-Pillow>=8.1.1  
-Scrapy>=2.7.1  
-requests>=2.28.1  
-pandas>=1.5.2  
-numpy>=1.24.1  
-matplotlib>=3.6.2  
-seaborn>=0.12.2  
-squarify>=0.4.3  
-circlify>=0.15.0  
-pyecharts>=2.0.1  
+```text
+Pillow>=8.1.1
+Scrapy>=2.7.1
+requests>=2.28.1
+pandas>=1.5.2
+numpy>=1.24.1
+matplotlib>=3.6.2
+seaborn>=0.12.2
+squarify>=0.4.3
+circlify>=0.15.0
+pyecharts>=2.0.1
+```
+
 
 ```
 $ pip install -r requirements.txt
