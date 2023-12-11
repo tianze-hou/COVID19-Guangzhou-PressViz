@@ -2,20 +2,22 @@
 
 ## 内容及工作流程说明
 本项目为数据可视化作业《三年鏖战，广州疫情新闻发布会跨越终点》的源代码展示。考虑到matplotlib默认配置下对中文支持不佳，以及后期编辑排版中的效率，代码生成的多数图像不包括文字标签，也没有从美观角度考虑进行比较复杂的配置。后期编辑排版使用Adobe Illustrator完成。  
+
 部分数据使用pandas进行了预处理。考虑到csv格式预处理流程方法较多，代码比较简单，此处不再一一展示。  
+
 对于词频统计部分，考虑到StanfordNLP对新词的分词准确率不佳，最终使用了微词云进行分词统计。
 
 ## 依赖
-Pillow>=8.1.1
-Scrapy>=2.7.1
-requests>=2.28.1
-pandas>=1.5.2
-numpy>=1.24.1
-matplotlib>=3.6.2
-seaborn>=0.12.2
-squarify>=0.4.3
-circlify>=0.15.0
-pyecharts>=2.0.1
+Pillow>=8.1.1  
+Scrapy>=2.7.1  
+requests>=2.28.1  
+pandas>=1.5.2  
+numpy>=1.24.1  
+matplotlib>=3.6.2  
+seaborn>=0.12.2  
+squarify>=0.4.3  
+circlify>=0.15.0  
+pyecharts>=2.0.1  
 
 ```
 $ pip install -r requirements.txt
